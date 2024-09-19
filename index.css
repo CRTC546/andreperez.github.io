@@ -1,26 +1,42 @@
-/* styles.css */
+/* Colores principales */
+:root {
+  --azul-principal: #29487d;
+  --azul-secundario: #5472b0;
+  --blanco: #ffffff;
+  --gris-claro: #f2f2f2;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--azul-principal);
+  background-color: var(--gris-claro);
 }
 
 header {
-    text-align: center;
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Ejemplo de un botón */
+button {
+  background-color: var(--azul-secundario);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 10px;
+/* Ejemplo de un enlace */
+a {
+  color: var(--azul-principal);
+  text-decoration: none;
 }
 
+/* Ejemplo de un contenedor para proyectos */
 .proyecto {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+  background-color: var(--blanco);
+  border: 1px solid var(--azul-secundario);
+  padding: 20px;
+  margin-bottom: 20px;
